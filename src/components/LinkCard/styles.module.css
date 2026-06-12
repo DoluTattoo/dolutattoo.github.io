@@ -1,0 +1,92 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.linkCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-card-border-radius);
+  background-color: var(--ifm-card-background-color);
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.linkCard:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+}
+
+.icon {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+}
+
+.badge--primary {
+  color: #fff;
+  background: linear-gradient(135deg, var(--ifm-color-primary-light), var(--ifm-color-primary-darkest));
+}
+
+.badge--neutral {
+  color: var(--ifm-color-emphasis-700);
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+.linkCard:hover .title {
+  color: var(--ifm-color-primary);
+}
+
+.description {
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: var(--ifm-color-emphasis-400);
+  transition: color 0.2s, transform 0.2s;
+}
+
+.linkCard:hover .arrow {
+  color: var(--ifm-color-primary);
+  transform: translateX(3px);
+}

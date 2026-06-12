@@ -1,40 +1,57 @@
 ---
 sidebar_position: 3
+description: Build Dolu Tool from source to get the latest and experimental features.
 ---
+
+import DownloadCta from '@site/src/components/DownloadCta';
 
 # Development
 
-The next steps will require some knowledges but provides you all latest and experimental features.
+Build the project yourself to get the latest and experimental features.
 
-### Prerequisites
-- **[Git](https://git-scm.com/)**,
-- **[Node](https://nodejs.org/en/)** (LTS),
+:::caution
+These steps require some development knowledge. If you just want to use the tool, grab the latest release below and follow the **[Installation](./installation.md)** guide instead.
+:::
+
+<DownloadCta />
+
+## Prerequisites
+
+- **[Git](https://git-scm.com/)**
+- **[Node](https://nodejs.org/en/)** (LTS)
 - **[pnpm](https://pnpm.io/installation)**
 
-### Installing Dependencies & Setup
-Clone the repository into your resources folder with the name `dolu_tool`.
-```
-git clone https://github.com/dolutattoo/dolu_tool.git
-```
+## Installing dependencies & setup
 
-Navigate to `dolu_tool/web` folder and install dependencies for NUI.
+1. Clone the repository into your `resources` folder with the name `dolu_tool`:
 
-```
-cd ./web
-```
-```
-pnpm i
-```
+   ```bash
+   git clone https://github.com/dolutattoo/dolu_tool.git
+   ```
 
-### Building NUI
+2. Navigate to the `dolu_tool/web` folder and install the NUI dependencies:
 
-To build the NUI, run this from `dolu_tool/web` folder:
-```
+   ```bash
+   cd ./web
+   pnpm i
+   ```
+
+## Building the NUI
+
+Run this from the `dolu_tool/web` folder:
+
+```bash
 pnpm build
 ```
 
-### Watching files
-If you don't want to rebuild all the time, you can also watch files which will write to disk on file save.
-```
+## Watching files
+
+If you don't want to rebuild all the time, you can watch files instead — changes are written to disk on file save:
+
+```bash
 pnpm start:game
 ```
+
+:::tip
+Found a bug or built something cool? Contributions are welcome on **[GitHub](https://github.com/dolutattoo/dolu_tool)**!
+:::

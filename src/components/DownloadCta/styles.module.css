@@ -1,0 +1,75 @@
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-left: 4px solid var(--ifm-color-primary);
+  border-radius: var(--ifm-card-border-radius);
+  background-color: var(--ifm-card-background-color);
+}
+
+.ctaText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.ctaText span {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.875rem;
+}
+
+.ctaActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.primaryBtn {
+  color: #fff;
+  background: linear-gradient(135deg, var(--ifm-color-primary-light), var(--ifm-color-primary-darkest));
+  box-shadow: 0 4px 14px rgba(189, 27, 65, 0.35);
+}
+
+.primaryBtn:hover {
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(189, 27, 65, 0.45);
+}
+
+.secondaryBtn {
+  color: var(--ifm-font-color-base);
+  background-color: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.secondaryBtn:hover {
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  transform: translateY(-2px);
+  background-color: var(--ifm-color-emphasis-200);
+  border-color: var(--ifm-color-emphasis-400);
+}
+
+.btnIcon {
+  display: block;
+}

@@ -34,6 +34,7 @@ const config = {
           editUrl: 'https://github.com/dolu/dolu.github.io/tree/main/',
           showLastUpdateTime: true,
         },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },

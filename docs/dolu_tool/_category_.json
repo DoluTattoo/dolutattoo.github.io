@@ -2,8 +2,7 @@
   "label": "Dolu Tool",
   "position": 2,
   "link": {
-    "type": "generated-index",
-    "slug": "/category/dolu_tool",
-    "description": "___________"
+    "type": "doc",
+    "id": "dolu_tool/index"
   }
 }
