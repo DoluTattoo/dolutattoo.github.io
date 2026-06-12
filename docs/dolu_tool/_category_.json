@@ -1,8 +1,9 @@
 {
-  "label": "dolu_tool",
+  "label": "Dolu Tool",
   "position": 2,
   "link": {
     "type": "generated-index",
+    "slug": "/category/dolu_tool",
     "description": "___________"
   }
 }

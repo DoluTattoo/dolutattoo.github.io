@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Dolu',
-  tagline: 'Dolu scripts are cool',
+  tagline: 'Dolu mods are cool',
   url: 'https://dolutattoo.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -45,7 +45,7 @@ const config = {
         defaultMode: 'dark',
       },
       navbar: {
-        title: 'Dolu scripts',
+        title: 'Dolu Mods',
         logo: {
           alt: 'Dolu Logo',
           src: 'img/logo_dolu.png',
